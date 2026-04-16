@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Dream League Soccer 26</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game-info.html">Game Info</a></li>
+            <li><a href="how-to-play.html">How to Play</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="team-builder.html">Team Builder</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>Have a question or feedback? We'd love to hear from you!</p>
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject:</label>
+                    <input type="text" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label>Message:</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="formMessage" style="margin-top: 20px;"></div>
+        </section>
+        <section>
+            <h2>Other Ways to Reach Us</h2>
+            <ul>
+                <li>📧 Email: support@dreamleaguesoccer.com</li>
+                <li>🐦 Twitter: @DreamLeagueSoccer</li>
+                <li>📱 Instagram: @DreamLeagueSoccer</li>
+                <li>💬 Discord: DLS Community Server</li>
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

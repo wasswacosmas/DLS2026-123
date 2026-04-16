@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Team Builder - Dream League Soccer 26</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game-info.html">Game Info</a></li>
+            <li><a href="how-to-play.html">How to Play</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="team-builder.html">Team Builder</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Team Builder Calculator</h1>
+        <section>
+            <h2>Calculate Your Team Value</h2>
+            <div class="builder-form">
+                <div class="form-group">
+                    <label>Team Name:</label>
+                    <input type="text" id="teamName" placeholder="Enter your team name" value="Wasswa FC">
+                </div>
+                <div class="form-group">
+                    <label>Budget (£):</label>
+                    <input type="number" id="budget" placeholder="Enter your budget" value="100000000">
+                </div>
+                <div class="form-group">
+                    <label>Number of Star Players:</label>
+                    <input type="number" id="starPlayers" placeholder="0" value="0" min="0" max="11">
+                </div>
+                <div class="form-group">
+                    <label>Average Player Rating:</label>
+                    <input type="range" id="avgRating" min="75" max="99" value="85">
+                    <span id="ratingDisplay">85</span>
+                </div>
+                <button onclick="calculateTeam()" class="btn">Calculate Team Value</button>
+            </div>
+        </section>
+        <section id="results" style="display:none;">
+            <h2>Team Analysis</h2>
+            <div class="results-container">
+                <p><strong>Team Name:</strong> <span id="resultTeamName"></span></p>
+                <p><strong>Budget:</strong> £<span id="resultBudget"></span></p>
+                <p><strong>Estimated Team Value:</strong> £<span id="resultValue"></span></p>
+                <p><strong>Average Rating:</strong> <span id="resultAvgRating"></span></p>
+                <p><strong>Star Players:</strong> <span id="resultStars"></span></p>
+                <p><strong>Budget Remaining:</strong> £<span id="resultRemaining"></span></p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
